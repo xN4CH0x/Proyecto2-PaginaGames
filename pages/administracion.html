@@ -57,34 +57,79 @@
                         <form action="">
                             
                             <div class="datos-container mb-3">
-                                <label for="">Código:</label>
+                                <label for="codigo">Código:</label>
                                 <input type="text" id="codigo">
                             </div>
 
                             <div class="datos-container mb-3">
-                                <label for="">Nombre:</label>
+                                <label for="nombre">Nombre:</label>
                                 <input type="text" id="nombre">
                             </div>
 
                             <div class="datos-container mb-3">
-                                <label for="">Categoría</label>
+                                <label for="categoria">Categoría</label>
                                 <input type="text" id="categoria">
                             </div>
 
                             <div class="datos-container mb-3">
-                                <label for="">Descripción</label>
+                                <label for="descripcion">Descripción</label>
                                 <input type="text" id="descripcion">
                             </div>
 
                             <div class="datos-container mb-3">
-                                <label for="">Disponible (Si/No)</label>
+                                <label for="disponible">Disponible (true/false)</label>
                                 <input type="text" id="disponible">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" onclick="guardarDato()">Guardar</button>
+                        <button type="button" class="btn btn-primary" onclick="agregarJuego()">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Editar-->
+        <div class="modal fade text-black" id="editarModal" tabindex="-1" aria-labelledby="editarModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Datos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            
+                            <div class="datos-container mb-3">
+                                <label for="codigo-editar">Código:</label>
+                                <input type="text" id="codigo-editar">
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="nombre-editar">Nombre:</label>
+                                <input type="text" id="nombre-editar">
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="categoria-editar">Categoría</label>
+                                <input type="text" id="categoria-editar">
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="descripcion-editar">Descripción</label>
+                                <input type="text" id="descripcion-editar">
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="disponible-editar">Disponible (true/false)</label>
+                                <input type="text" id="disponible-editar">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="editarJuego()">Guardar</button>
                     </div>
                 </div>
             </div>
