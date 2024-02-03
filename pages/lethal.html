@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============================FONTS=============================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+    <!--===========================BOOTSTRAP=========================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/juego.css">
+    <title>Lethal Company</title>
+</head>
+<body class="p-4">
+    <header>
+
+    </header>
+
+    <main>
+        <h1 class="text-center">Lethal Company</h1>
+        <section class="principalSection d-flex justify-content-between p-4 flex-column-reverse flex-xl-row">
+            <div class="presentacion d-flex flex-column">
+                <iframe src="https://www.youtube.com/embed/qQFUol6k-ig?si=Pr8DyYhFi4oPVQmK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="trailer img-maximizada mb-2" id="trailer-maximizado"></iframe>
+                <img src="/assets/images/lc1.jpg" alt="imagen 1 preview" id="img1-maximizada" class="img-maximizada mb-2">
+                <img src="/assets/images/lc2.jpg" alt="imagen 2 preview" id="img2-maximizada" class="img-maximizada mb-2">
+                <img src="/assets/images/lc3.jpg" alt="imagen 3 preview" id="img3-maximizada" class="img-maximizada mb-2">
+                <img src="/assets/images/lc4.jpg" alt="imagen 4 preview" id="img4-maximizada" class="img-maximizada mb-2">
+
+                <div class="imagenes-presentacion d-flex">
+                    <img src="/assets/images/lctrailer.jpg" alt="trailer Preview" id="trailer-preview" onclick="mostrarImagenes('#trailer-maximizado', '#img1-maximizada', '#img2-maximizada', '#img3-maximizada', '#img4-maximizada')">
+                    <img src="/assets/images/lc1.jpg" alt="imagen 1 preview" id="img1-preview" onclick="mostrarImagenes('#img1-maximizada', '#trailer-maximizado', '#img2-maximizada', '#img3-maximizada', '#img4-maximizada')">
+                    <img src="/assets/images/lc2.jpg" alt="imagen 2 preview" id="img2-preview" onclick="mostrarImagenes('#img2-maximizada', '#trailer-maximizado', '#img1-maximizada', '#img3-maximizada', '#img4-maximizada')">
+                    <img src="/assets/images/lc3.jpg" alt="imagen 3 preview" id="img3-preview" onclick="mostrarImagenes('#img3-maximizada', '#trailer-maximizado', '#img2-maximizada', '#img1-maximizada', '#img4-maximizada')">
+                    <img src="/assets/images/lc4.jpg" alt="imagen 4 preview" id="img4-preview" class="m-0" onclick="mostrarImagenes('#img4-maximizada', '#trailer-maximizado', '#img2-maximizada', '#img3-maximizada', '#img1-maximizada')">
+                    
+                </div>
+            </div>
+            
+
+            <div class="logo-descripcion d-flex flex-column align-items-md-center align-items-xl-start px-2">
+                <img src="/assets/images/header.jpg" alt="logo Lethal Company" class="mb-2 headerImage">
+                <div class="parrafos">
+                    <p>Un juego de terror sobre viajar a lunas y recolectar basura para venderla a La Compañía.</p>
+                    <p>RESEÑAS GENERALES: Extremadamente positivas (205,969)</p>
+                    <p>FECHA DE LANZAMIENTO: 23 OCT 2023</p>
+                    <p>DESARROLLADOR: Zeekerss</p>
+                    <p>CATEGORÍA: Terror</p>
+                </div>
+                
+                <div class="botonDescargar mt-2 p-2 px-4 align-self-center d-flex align-items-center">
+                    <h3>Comprar</h3>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="infoSection p-4">           
+            <h2>Descripción</h2>
+            <img src="/assets/images/lethalCompanyDescHeader.gif" alt="Objetivos" class="mb-2">
+            <p>Eres un trabajador contratado por la Compañía. Tu trabajo consiste en recoger chatarra de lunas abandonadas e industrializadas para cumplir la cuota de beneficios de la Compañía. Puedes usar el dinero que ganes para viajar a nuevas lunas con mayores riesgos y recompensas... o puedes comprar trajes de lujo y decoraciones para tu nave. Experimenta la naturaleza, escaneando cualquier criatura que encuentres para añadirla a tu bestiario. Explora los maravillosos exteriores y rebusca en sus abandonados bajos de acero y hormigón. Eso sí, nunca te saltes la cuota.</p>
+            <img src="/assets/images/lethalCompanyDescHeader2.gif" alt="No vayas solo" class="mb-2">
+            <p>Estos peligros acechan a los vulnerables y solitarios, y la protección de tu tripulación puede ser tu única esperanza. Puedes guiar a tus compañeros de tripulación desde tu nave, usando el radar para señalar trampas y utilizando el terminal de la nave para acceder a puertas cerradas a distancia... o podéis entrar todos juntos. La tienda de la Compañía tiene muchas herramientas útiles para el trabajo, como luces, palas, walkie talkies, granadas aturdidoras o boomboxes.</p>
+            <h2>Los desarroladores describen su contenido así</h2>
+            <p>El juego tiene una atmósfera realista. Los personajes pueden morir por diversos medios, algunos de ellos desmembrados o decapitados. Los jugadores pueden usar drogas médicas ficticias de forma imprudente.</p>
+            <h2>Requisitos</h2>
+            <p>Requiere un procesador y un sistema operativo de 64 bits
+                    - SO: Windows 10
+                    - Procesador: Intel Core i5-7400 CPU @ 3.00GHz ; Shader Model 5
+                    - Gráficos: NVIDIA GForce GTX 1050
+                    - DirectX: Versión 11
+                    - Red: Conexión de banda ancha a Internet
+                    - Almacenamiento: 1 GB de espacio disponible
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+
+    </footer>
+
+
+    <!--=============================SCRIPTS==========================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/juego.js"></script>
+</body>
+</html>
