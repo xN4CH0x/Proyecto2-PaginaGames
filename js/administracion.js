@@ -51,9 +51,16 @@ function agregarJuego(){
     let nuevoCategoria = document.querySelector('#categoria').value;
     let nuevoDesc = document.querySelector('#descripcion').value;
     let nuevoChecked = document.querySelector('#disponible').value;
-    nuevoChecked.toLowerCase();
-    if(nuevoChecked !== 'true' && nuevoChecked !== 'false'){
-        nuevoChecked = true;
+    nuevoChecked = nuevoChecked.toLowerCase();
+    console.log(nuevoChecked);
+    if(nuevoChecked !== 'si' && nuevoChecked !== 'no'){
+        nuevoChecked = 'checked';
+    }
+    else if(nuevoChecked === 'si'){
+        nuevoChecked = 'checked';
+    }
+    else{
+        nuevoChecked = '';
     }
     //Crea un objeto nuevo para agregar al array de objetos Fila
     var nuevoObjeto = {
@@ -78,10 +85,17 @@ function editarJuego(){
     let nuevoId = nuevoNombre + '-row';
     let nuevoCategoria = document.querySelector('#categoria-editar').value;
     let nuevoDesc = document.querySelector('#descripcion-editar').value;
-    let nuevoChecked = document.querySelector('#disponible').value;
-    nuevoChecked.toLowerCase();
-    if(nuevoChecked !== 'true' && nuevoChecked !== 'false'){
-        nuevoChecked = true;
+    let nuevoChecked = document.querySelector('#disponible-editar').value;
+    nuevoChecked = nuevoChecked.toLowerCase();
+    console.log(nuevoChecked);
+    if(nuevoChecked === '' || (nuevoChecked !== 'si' && nuevoChecked !== 'no')){
+        nuevoChecked = 'none';
+    }
+    else if(nuevoChecked === 'si'){
+        nuevoChecked = 'checked';
+    }
+    else{
+        nuevoChecked = '';
     }
     //Recupera los datos de la id de la fila a editar y de las filas desde el Local Storage
     let editarId = localStorage.getItem('editarId');
@@ -106,7 +120,7 @@ function editarJuego(){
                 filas[i].descripcion = nuevoDesc;
                 localStorage.setItem('filas', JSON.stringify(filas));                
             }
-            if(nuevoChecked.length != 0){
+            if(nuevoChecked !== 'none'){
                 filas[i].checked = nuevoChecked;
                 localStorage.setItem('filas', JSON.stringify(filas));
             }        
@@ -140,39 +154,22 @@ function enviarId(idEditar){
 }
 
 //FUNCION PARA CAMBIAR EL ESTADO DEL CHECKED 
-function cambiarChecked(checkboxId, filaId){
+function guardarCheckbox(checkboxFilaId) {		
     filas = JSON.parse(localStorage.getItem('filas'));
     for(let i=0; i<filas.length; i++){
-        if(filas[i].id === filaId){
-            console.log(filas[i].id);
-            if(filas[i].checked === 'true'){
-                filas[i].checked = 'false';
-                console.log('if');
+        if(filas[i].id === checkboxFilaId){
+            if(filas[i].checked === 'checked'){
+                filas[i].checked = '';
                 localStorage.setItem('filas', JSON.stringify(filas));
-                filas = JSON.parse(localStorage.getItem('filas'));
-                console.log(filas[i].checked);
-            }
-            else if(filas[i].checked.length === 0){
-                filas[i].checked = 'true';
-                console.log('else if');
-                
-                localStorage.setItem('filas', JSON.stringify(filas));
-                filas = JSON.parse(localStorage.getItem('filas'));
-                console.log(filas[i].checked);
             }
             else{
-                filas[i].checked = 'true'
-                console.log('else');
-                
+                filas[i].checked = 'checked';
                 localStorage.setItem('filas', JSON.stringify(filas));
-                filas = JSON.parse(localStorage.getItem('filas'));
-                console.log(filas[i].checked);
             }
         }
     }
-    localStorage.setItem('filas', JSON.stringify(filas));
-    
 }
+
 
 var filas = [
     {
@@ -182,7 +179,7 @@ var filas = [
         nombre: 'Lethal Company',
         categoria: 'Terror',
         descripcion: 'Lootear y conseguir materiales para la compañía.',
-        checked: 'true',       
+        checked: 'checked',       
     },
     
     {
@@ -192,7 +189,7 @@ var filas = [
         nombre: 'CSGO',
         categoria: 'FPS',
         descripcion: 'disparos y terrorismo.',
-        checked: 'true',      
+        checked: 'checked',      
     },
 
     {
@@ -202,7 +199,7 @@ var filas = [
         nombre: 'Rocket League',
         categoria: 'Deportes',
         descripcion: 'Autos voladores y fútbo.l',
-        checked: 'true',        
+        checked: 'checked',        
     },
 
     {
@@ -212,7 +209,7 @@ var filas = [
         nombre: 'League of Legends',
         categoria: 'MOBA',
         descripcion: '5 conos contra 5 conos.',
-        checked: 'true',  
+        checked: 'checked',  
     },
 
     {
@@ -222,7 +219,7 @@ var filas = [
         nombre: 'Outlast',
         categoria: 'Terror',
         descripcion: 'Persecusiones en un manicomio.',
-        checked: 'true',
+        checked: 'checked',
     },
 ];
 
@@ -236,7 +233,7 @@ var filaDatos = filas.map(fila =>{
         <td>${fila.nombre}</td>
         <td>${fila.categoria}</td>
         <td class="descripcion-columna">${fila.descripcion}</td>
-        <td class="text-center"><input class="checkbox" id="checkbox-${fila.id}" type="checkbox" checked="${fila.checked}" onclick="cambiarChecked('checkbox-${fila.id}', '${fila.id}')"></td>
+        <td class="text-center"><input class="checkbox" id="checkbox-${fila.id}" type="checkbox" ${fila.checked} onclick="guardarCheckbox('${fila.id}')"></td>
         <td class="d-flex opciones-botones">
             <img src="/assets/images/trash-solid.svg" alt="Eliminar" id="eliminar" onclick="borrar('${fila.id}')">
             <img src="/assets/images/pen-to-square-regular.svg" alt="Editar" id="editar" data-bs-toggle="modal" data-bs-target="#editarModal" onclick="enviarId('${fila.id}')">
