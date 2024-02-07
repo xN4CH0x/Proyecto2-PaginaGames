@@ -1,4 +1,4 @@
-p {
+footer p {
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
   font-family: 'Teko', sans-serif;
@@ -6,6 +6,9 @@ p {
 
 footer {
   background-color: #121313;
+  /* position: fixed;
+  bottom: 0; */
+  width: 100%;
 }
 
 #copyRig {
@@ -14,7 +17,7 @@ footer {
 }
 
 
-img {
+footer img {
   width: 42px;
 }
 
@@ -76,7 +79,7 @@ img {
   font-size: 1.6em;
   text-transform: uppercase;
   text-shadow: 0px 2px 3px #555;
-  animation: titileAnimation 2s infinite alternate;
+  animation: titleAnimation 2s infinite alternate;
 }
 
 .content #switch {
@@ -96,7 +99,7 @@ img {
   border-radius: 12px;
 }
 
-h5 {
+footer h5 {
   text-align: center;
   margin: 0.5em auto;
   letter-spacing: 0.15em;
@@ -106,7 +109,7 @@ h5 {
   text-transform: uppercase;
   color: #6d5669;
   text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  animation: titileAnimation 1s infinite alternate;
+  animation: titleAnimation 1s infinite alternate;
 }
 
 .animate {
@@ -267,7 +270,7 @@ h5 {
 /*------------- Boton Rojo-------- */
 
 /* -----------Input Formulario------- */
-.input {
+footer .input {
   color: #8707ff;
   border: 3px solid #8707ff;
   border-radius: 15px;
@@ -276,7 +279,7 @@ h5 {
   width: 300px;
 }
 
-.input:active {
+footer .input:active {
   box-shadow: 2px 2px 15px #8707ff inset;
 }
 
@@ -294,7 +297,6 @@ h5 {
   cursor: pointer;
   transition: all 0.2s;
   font-size: 17px;
-  /*padding: 0.7em 1.8em;*/
   width: 40px;
   height: 40px;
   border-radius: 50%;

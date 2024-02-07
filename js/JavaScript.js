@@ -1,9 +1,3 @@
-/* let tswitch = document.getElementById("switch");
-tswitch.onclick = function () {
-  this.style.display = "none";
-  document.getElementById("lights").classList.add("animate");
-}; */
-/* Difunira Neon Letra */
 
 /* Funcion ocultar contraseña  */
 

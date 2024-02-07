@@ -123,13 +123,13 @@ body {
 /* BUSCADOR */
 
 
-.container {
+.navbar .container {
     position: absolute;
     left: 187vh;
     max-width: 60px;
 }
 
-input {
+.navbar input {
     outline: none;
     box-sizing: border-box;
     height: 45px;
@@ -153,7 +153,7 @@ input {
     top: 0px;
     width: 45px;
     height: 45px;
-    background: #cc0000;
+    background: #8707ff;
     line-height: 80px;
     border-radius: 50%;
     text-align: center;
@@ -170,27 +170,27 @@ input {
     bottom: 16px;
 }
 
-.container:hover input {
+.navbar .container:hover input {
     transform: translate(-255px);
     width: 300px;
 }
 
-.container:hover i {
+.navbar .container:hover i {
     transform: rotate(-360deg);
 }
 
 .btnLupa:hover {
-    background: #cc0000;
+    background: #ff3cac;
 }
 
 @media(max-width:500px) {
-    .container {
+    .navbar .container {
         padding-top: 15px;
         left: 0;
         max-width: 350px;
     }
 
-    input {
+    .navbar input {
         width: 300px;
         height: 40px;
         position: absolute;
@@ -215,24 +215,24 @@ input {
         bottom: 15px;
     }
 
-    .container:hover input {
+    .navbar .container:hover input {
         transform: translate(0px);
         width: 300px;
     }
 
-    .container:hover i {
+    .navbar .container:hover i {
         transform: rotate(0deg);
     }
 }
 
 @media(min-width:501px) and (max-width:1000px) {
-    .container {
+    .navbar .container {
         padding-top: 15px;
         left: 0;
         max-width: 300px;
     }
 
-    input {
+    .navbar input {
         width: 260px;
         height: 40px;
         position: absolute;
@@ -257,7 +257,7 @@ input {
         bottom: 15px;
     }
 
-    .container:hover input {
+    .navbar .container:hover input {
         transform: translate(0px);
         width: 280px;
     }
@@ -269,7 +269,7 @@ input {
 
 
 .login-button {
-    background-color: #cc0000;
+    background-color: #8707ff;
     color: #fff;
     font-size: 14px;
     padding: 8px 20px;
@@ -280,7 +280,7 @@ input {
 }
 
 .login-button:hover {
-    background-color: #ff0000;
+    background-color: #ff3cac;
 }
 
 .navbar-toggler {
@@ -311,7 +311,7 @@ input {
 }
 
 .dropdown-item:hover {
-    background-color: #ff0000;
+    background-color: #ff3cac;
 }
 
 .nav-link::before {
@@ -322,7 +322,7 @@ input {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #cc0000;
+    background-color: #8707ff;
     visibility: hidden;
     transition: 0.3s ease-in-out;
 }

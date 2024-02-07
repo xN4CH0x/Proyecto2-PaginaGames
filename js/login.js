@@ -33,6 +33,15 @@ function validateInputs() {
     alert("Por favor, ingresa una contraseña.");
     return false;
   }
+  if (usuario == "Julio") {
+    alert("Bienvenido Gamer!!");
+    return false;
+  }
+
+  if (password == "julio123") {
+    alert("Bienvenido Gamer!");
+    return false;
+  }
 
   let currentUser = {
     username: "admin",
@@ -52,7 +61,17 @@ function validateInputs() {
 }
 
 /* Validar Login */
-
+function enviarEmail() {
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "gdann0078@gmail.com",
+    Password: "4C9878AD3387CC0A3C2E00CF40486F8562D9",
+    To: "gdann0078@gmail.com",
+    From: "gdann0078@gmail.com",
+    Subject: "Gracias por suscribirte a nuestra Betas!!",
+    Body: "Gracias por suscribirte te estaremos avisando sobre   juegos y  betas que ingresan a la plataforma. ",
+  }).then((message) => alert(message));
+}
 /* Modal Contraseña  */
 document.addEventListener("DOMContentLoaded", function () {
   let windowBackground = document.getElementById("window-background");
