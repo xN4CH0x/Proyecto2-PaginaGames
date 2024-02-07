@@ -1,9 +1,3 @@
-:root{
-    --orange-color: #E9573E;
-    --bs-dark-rgb: 33,37,41;
-    --gray-color: #504c4c;
-}
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,6 +8,9 @@ html {
     scroll-behavior: smooth;
 }
 
+main{
+    margin-top: 8rem;
+}
 
 h1, h2, h3{
     font-family: 'Teko', sans-serif;
@@ -79,9 +76,24 @@ h2{
     border-radius: 1rem;
 }
 
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
 .botonDescargar{
-    background-color: var(--orange-color);
+    background-color: #8707ff;
     border-radius: 2rem;
+    text-decoration: none;
+}
+
+.botonDescargar a{
+    text-decoration: none;
 }
 
 .botonDescargar h3{
