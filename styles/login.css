@@ -1,0 +1,314 @@
+/* ----------Login------------------------------------- */
+
+.animate {
+  animation: neonAnimation 10s infinite;
+}
+
+@keyframes titileAnimation {
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes neonAnimation {
+  0% {
+    color: #6d5669;
+    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+  }
+
+  100% {
+    color: #ff55de;
+    text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de;
+  }
+}
+
+/* -----------Efecto Neon---------- */
+
+/* ------------------Formulario---------- */
+.form {
+  border-radius: 10px;
+  padding: -12px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.labelfut {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #de5959;
+}
+
+
+
+.bodyLogin {
+  background-image: url(/assets/images/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-login {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  padding: 2em;
+  border-radius: 5vw;
+  backdrop-filter: blur(10px);
+}
+
+.form-login h1 {
+  color: rgb(204, 69, 69);
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Teko', sans-serif;
+}
+
+.form-login p {
+  color: red;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  background: transparent;
+  color: #ffff;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.recuerdame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.registro-link {
+  text-align: center;
+}
+
+/* ----boton login----- */
+.botLogin {
+  height: 3em;
+  /* Ajusta la altura del botón de manera más relativa */
+  margin: 10px auto;
+  /* Centra el botón horizontalmente */
+  width: 70%;
+  /* Utiliza un porcentaje para el ancho del botón */
+  max-width: 300px;
+  /* Agrega un punto y coma al final */
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+  /* Simplifica las propiedades de transición */
+  border-radius: 20px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+.botLogin:hover {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
+.botLogin:active {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  transition: 100ms;
+}
+
+.input-box input[type="email"] {
+  color: #7b3eb4;
+  font-size: larger;
+}
+
+.input-box input[type="text"] {
+  color: #7b3eb4;
+  font-size: larger;
+}
+
+.input-box input[type="password"] {
+  color: #7b3eb4;
+  font-size: larger;
+}
+
+
+/* Recuerdame */
+.check {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: var(--accent-color, #a3e583);
+}
+
+#cbx2:checked+.check svg {
+  stroke: var(--accent-color, #a3e583);
+}
+
+#cbx2:checked+.check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx2:checked+.check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+/* Recuerdame */
+
+/* Pop Up */
+
+.window-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.window-container {
+  position: relative;
+  background-color: #000;
+  /* Color de fondo negro */
+  width: 550px;
+  max-width: 90%;
+  /* Ancho máximo del contenedor */
+  height: auto;
+  padding: 1.5rem;
+  border-radius: 35px;
+  animation-name: modal;
+  animation-duration: 0.5s;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+
+}
+
+@keyframes modal {
+  from {
+    transform: translateY(50vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.login .close {
+  transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
+  transform: translateY(60vh);
+
+}
+
+
+.login .close-button {
+  position: absolute;
+  border-radius: 30%;
+  top: 10px;
+  /* Ajustado para que el botón 'x' sea visible */
+  right: 10px;
+  /* Ajustado para que el botón 'x' sea visible */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: white;
+  /* Fondo semi-transparente para el botón 'x' */
+}
+
+
+
+
+/*  SPop Up */
