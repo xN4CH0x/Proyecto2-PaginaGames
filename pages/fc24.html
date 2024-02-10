@@ -22,79 +22,78 @@
     <title>FC24</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand me-auto" href="/index.html">
-                    <img src="/assets/images//logo-PhotoRoom.png-PhotoRoom.png" alt="Logo">
-                    <div class="logoNombre d-none d-sm-block animate">
-                        ARCAD-IA
-                    </div>
+  <header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="/index.html">
+          <img src="/assets/images//logo-PhotoRoom.png-PhotoRoom.png" alt="Logo">
+          <div class="logoNombre d-none d-sm-block animate">
+            ARCAD-IA
+          </div>
+        </a>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              <a class="navbar-brand" href="/index.html">
+                <img src="/assets/images/logo-PhotoRoom.png-PhotoRoom.png" alt="Logo">
+                <div class="logoNombre">
+                  ARCAD-IA
+                </div>
+              </a>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Categorías
                 </a>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                            <a class="navbar-brand" href="/index.html">
-                                <img src="/assets/images/logo-PhotoRoom.png-PhotoRoom.png" alt="Logo">
-                                <div class="logoNombre">
-                                    ARCAD-IA
-                                </div>
-                            </a>
-                        </h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-center flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2 active" aria-current="page" href="/index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Categorías
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Acción</a></li>
-                                    <li><a class="dropdown-item" href="#">Aventura</a></li>
-                                    <li><a class="dropdown-item" href="#">Rol</a></li>
-                                    <li><a class="dropdown-item" href="#">Arcade</a></li>
-                                    <li><a class="dropdown-item" href="#">Simulación</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">Acerca De</a>
-                            </li>
-                            <li>
-                                <div class="container">
-                                    <input type="text" placeholder="Buscar..." maxlength="50">
-                                    <div class="btnLupa">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#accion">Acción</a></li>
+                  <li><a class="dropdown-item" href="#aventura">Aventura</a></li>
+                  <li><a class="dropdown-item" href="#rol">Rol</a></li>
+                  <li><a class="dropdown-item" href="#deportes">Deportes</a></li>
+                  <li><a class="dropdown-item" href="/pages/error404.html">Simulación</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="/pages/contactos.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="/pages/nosotros.html">Acerca De</a>
+              </li>
+              <li>
+                <div class="container">
+                  <input type="text" placeholder="Buscar..." maxlength="50">
+                  <div class="btnLupa">
+                    <i class="fa fa-search"></i>
+                  </div>
                 </div>
-                <div class="container d-none d-xl-block">
-                    <input id="inputBuscador" type="text" placeholder="Buscar..." maxlength="50">
-                    <div class="btnLupa">
-                        <i class="fa fa-search"></i>
-                    </div>
-                </div>
-                <a href="/pages/login.html" class="login-button">Login</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
-    </header>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container d-none d-xl-block">
+          <input id="inputBuscador" type="text" placeholder="Buscar..." maxlength="50">
+          <div class="btnLupa">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+        <a href="/pages/login.html" class="login-button">Login</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
     <main class="p-4">
         <h1 class="text-center">FC24</h1>
