@@ -3,34 +3,44 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
 /* DESTACADO */
 
 .presentacionDestacado {
-    width: 70%;
-    position: relative;
-    left: 25px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    width: 60vw;
+    height: 65vh;
+    margin: 0 2rem;
 }
 
-.presentacionDestacado h1 {
+.destacadoTitulo{
     color: #ffffff;
 }
 
 iframe {
-    width: 100%;
-    height: 60vh;
+    width: 60vw;
+    height: 50vh;
 }
 
 .presentacionDestacado img {
-    max-width: 150vh;
-    height: 60vh;
+    width: 60vw;
+    height: 50vh;
+}
+
+.imagenesDestacado{
+    display: flex;
+    justify-content: space-between;
 }
 
 .imagenesDestacado img {
-    padding-right: 7px;
-    max-width: 50vh;
-    max-height: 16.5vh;
+    height: 6rem;
+    width: auto;
 }
 
 .img-maximizada {
@@ -38,25 +48,21 @@ iframe {
 }
 
 .tituloDestacado {
-    position: absolute;
-    left: 138.1vh;
-    top: 14vh;
-    width: 40vh;
-    height: 60.1vh;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    width: 20vw;
     padding: 15px;
     text-align: justify;
     color: #ffffff;
-    background-image: url(/assets/GTAVI\ backgound.webp);
+    background-image: url(/assets/images/GTAVI\ backgound.webp);
     background-repeat: no-repeat;
-    background-size: 40vh 70vh;
+    background-size: 40vw 70vh;
     --opacidad-negro: 0.25;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/GTAVI\ backgound.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/images/GTAVI\ backgound.webp");
 }
 
 .tituloDestacado img {
     width: 25vh;
-    position: relative;
-    left: 7vh;
 }
 
 .tituloDestacado h2 {
@@ -78,9 +84,7 @@ iframe {
     color: #ffffff;
     font-family: 'Teko', sans-serif;
     text-align: start;
-    position: relative;
-    left: 50px;
-    top: 40px;
+    margin-top: rem;
 }
 
 
@@ -94,7 +98,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background: rgb(49, 49, 49);
+    background: #000117;
 }
 
 a {
@@ -120,7 +124,8 @@ a {
     align-items: center;
     width: fit-content;
     padding: 20px 0px;
-    margin: 0px auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
     overflow: hidden;
     height: 37vh;
 }
@@ -216,8 +221,10 @@ a {
     /* SLIDER CARDS */
 
     .carousel {
-        padding-top: 5vh;
-        padding-bottom: 3vh;
+        padding-top: 1rem;
+        padding-bottom: 1vh;
+        margin-top: 0;
+        margin-bottom: 2rem;
     }
 
     .carousel h1 {
@@ -329,7 +336,8 @@ a {
 
     .showcase {
         width: 150vh;
-        margin: 50px;
+        margin: auto;
+        margin-bottom: 5rem;
     }
 
     *,
@@ -397,23 +405,23 @@ a {
     }
 
     .game:nth-child(1) {
-        background-image: url(/assets/FC24\ grande.jpg);
+        background-image: url(/assets/images/FC24\ grande.jpg);
     }
 
     .game:nth-child(2) {
-        background-image: url(/assets/Gta5.jpg);
+        background-image: url(/assets/images/Gta5.jpg);
     }
 
     .game:nth-child(3) {
-        background-image: url(/assets/LOL\ grande.jfif);
+        background-image: url(/assets/images/LOL\ grande.jfif);
     }
 
     .game:nth-child(4) {
-        background-image: url(/assets/Forza\ Horizon.jpg);
+        background-image: url(/assets/images/Forza\ Horizon.jpg);
     }
 
     .game:nth-child(5) {
-        background-image: url(/assets/Ark\ grande.jpg);
+        background-image: url(/assets/images/Ark\ grande.jpg);
     }
 }
 

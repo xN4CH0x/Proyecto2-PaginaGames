@@ -22,49 +22,15 @@
     <main>
 
         <!-- DESTACADO -->
-
-        <section class="sectionDestacado d-flex justify-content-between p-4 flex-column-reverse flex-xl-row">
-            <div class="presentacionDestacado d-flex flex-column">
-                <h1>Destacado</h1>
-                <iframe frameborder="0" type="text/html"
-                    src="https://www.dailymotion.com/embed/video/x8q8nji?autoplay=1" allowfullscreen
-                    title="Dailymotion Video Player" alt="Imagen GTA VI" class="mb-2" id="img1-maximizada">
-                </iframe>
-                <img src="/assets/GTAVI 2.webp" alt="Imagen 2 GTA VI preview" id="img2-maximizada"
-                    class="img-maximizada mb-2">
-                <img src="/assets/GTAVI 3.jpg" alt="Imagen 3 GTA VI preview" id="img3-maximizada"
-                    class="img-maximizada mb-2">
-                <img src="/assets/GTAVI 4.jpg" alt="Imagen 4 GTA VI preview" id="img4-maximizada"
-                    class="img-maximizada mb-2">
-                <img src="/assets/GTAVI 5.avif" alt="Imagen 5 GTA VI preview" id="img5-maximizada"
-                    class="img-maximizada mb-2">
-
-                <div class="imagenesDestacado d-flex">
-                    <img src="/assets/GTAVI 1.jpg" alt="Imagen GTA VI" id="img1-preview"
-                        onclick="mostrarImagenes('#img1-maximizada', '#img2-maximizada', '#img3-maximizada', '#img4-maximizada', '#img5-maximizada',)">
-                    <img src="/assets/GTAVI 2.webp" alt="Imagen 2 GTA VI previw" id="img2-preview"
-                        onclick="mostrarImagenes('#img2-maximizada', '#img1-maximizada', '#img3-maximizada', '#img4-maximizada', '#img5-maximizada',)">
-                    <img src="/assets/GTAVI 3.jpg" alt="Imagen 3 GTA VI previw" id="img3-preview"
-                        onclick="mostrarImagenes('#img3-maximizada', '#img1-maximizada', '#img2-maximizada', '#img4-maximizada', '#img5-maximizada',)">
-                    <img src="/assets/GTAVI 4.jpg" alt="Imagen 4 GTA VI previw" id="img4-preview"
-                        onclick="mostrarImagenes('#img4-maximizada', '#img1-maximizada', '#img2-maximizada', '#img3-maximizada', '#img5-maximizada',)">
-                    <img src="/assets/GTAVI 5.avif" alt="Imagen 5 GTA VI previw" id="img5-preview" class="m-0"
-                        onclick="mostrarImagenes('#img5-maximizada', '#img1-maximizada', '#img2-maximizada', '#img3-maximizada', '#img4-maximizada',)">
-                </div>
-            </div>
-            <div class="tituloDestacado d-flex flex-column justify-content-center">
-                <img src="/assets/GTAVI logo.webp" alt="Logo GTA VI">
-                <p class="pt-5 pb-3">Grand Theft Auto VI es un videojuego de acción-aventura de mundo abierto desarrollado por y
-                    distribuido por Rockstar Games. Será la octava entrega principal de dicha serie, la cual será
-                    estrenada en el año 2025.</p>
-                <p class="pt-3">Proximamente...</p>
-            </div>
+        <h1 class="destacadoTitulo text-center">Destacado</h1>
+        <section class="sectionDestacado d-flex p-4">         
+            
         </section>
 
 
         <!-- CATEGORIAS -->
 
-        <h1 class="tituloCategorias d-none d-xl-block">Categorias</h1>
+        <h1 class="tituloCategorias d-none d-xl-block text-center">Categorias</h1>
         <section class="showcase d-none d-xl-block">
             <div class="games">
                 <div class="game">
@@ -100,9 +66,8 @@
 
 
         <!-- SLIDER DEPORTES -->
-
-        <section id="deportes" class="carousel">
-            <h1>Deportes</h1>
+        <h2 class="text-center text-white">Deportes</h2>
+        <section id="deportes" class="carousel">        
             <div class="carrusel-list" id="carrusel-list">
                 <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                     onclick="app.processingButton(event)">
@@ -119,7 +84,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img class="imgSlider" src="/assets/FC24.jpg" alt="Imagen FC24">
+                                    <img class="imgSlider" src="/assets/images/FC24.jpg" alt="Imagen FC24">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -129,7 +94,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Football Manager.jpg" alt="Imagen Football Manager">
+                                    <img src="/assets/images/Football Manager.jpg" alt="Imagen Football Manager">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -139,7 +104,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Forza Horizon mini.jpg" alt="Imagen Forza Horizon">
+                                    <img src="/assets/images/Forza Horizon mini.jpg" alt="Imagen Forza Horizon">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -149,7 +114,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/PES.jfif" alt="Imagen E-Football 24">
+                                    <img src="/assets/images/PES.jfif" alt="Imagen E-Football 24">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -159,7 +124,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/NBA2K24.jpg" alt="Imagen NBA2K24">
+                                    <img src="/assets/images/NBA2K24.jpg" alt="Imagen NBA2K24">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -169,7 +134,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Madden NFL 24.jpeg" alt="Imagen Madden NFL24">
+                                    <img src="/assets/images/Madden NFL 24.jpeg" alt="Imagen Madden NFL24">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -179,7 +144,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Rocket League.jpg" alt="Imagen Rocket League">
+                                    <img src="/assets/images/Rocket League.jpg" alt="Imagen Rocket League">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -189,7 +154,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Fishing Planet.jpg" alt="Imagen Fishing Planet">
+                                    <img src="/assets/images/Fishing Planet.jpg" alt="Imagen Fishing Planet">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -199,7 +164,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/NFS Underground.jpg" alt="Imagen NFS Underground">
+                                    <img src="/assets/images/NFS Underground.jpg" alt="Imagen NFS Underground">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -209,7 +174,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Skate Session.jpg" alt="Imagen Skate Session">
+                                    <img src="/assets/images/Skate Session.jpg" alt="Imagen Skate Session">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -231,9 +196,8 @@
 
 
         <!-- SLIDER ACCIÓN -->
-
+        <h2 class="text-center text-white">Acción</h2>
         <section id="accion" class="carousel">
-            <h1>Acción</h1>
             <div class="carrusel-list" id="carrusel-list">
                 <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                     onclick="app.processingButton(event)">
@@ -250,7 +214,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Assassins Creed Valhalla.jpg"
+                                    <img src="/assets/images/Assassins Creed Valhalla.jpg"
                                         alt="Imagen Assassins Creed Valhalla">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
@@ -261,7 +225,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Pubg.jpg" alt="Imagen Pubg">
+                                    <img src="/assets/images/Pubg.jpg" alt="Imagen Pubg">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -271,7 +235,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Fornite.jpg" alt="Imagen Fornite">
+                                    <img src="/assets/images/Fornite.jpg" alt="Imagen Fornite">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -281,7 +245,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/GTAV.jpg" alt="Imagen GTAV">
+                                    <img src="/assets/images/GTAV.jpg" alt="Imagen GTAV">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -291,7 +255,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Battlefield.jpg" alt="Imagen Battlefield">
+                                    <img src="/assets/images/Battlefield.jpg" alt="Imagen Battlefield">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -301,7 +265,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Cyberpunk.jpg" alt="Imagen Cyberpunk">
+                                    <img src="/assets/images/Cyberpunk.jpg" alt="Imagen Cyberpunk">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -311,7 +275,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Halo.jpg" alt="Imagen Halo">
+                                    <img src="/assets/images/Halo.jpg" alt="Imagen Halo">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -321,7 +285,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/RDR2.jpg" alt="Imagen RDR2">
+                                    <img src="/assets/images/RDR2.jpg" alt="Imagen RDR2">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -331,7 +295,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Valorant.jpg" alt="Imagen Valorant">
+                                    <img src="/assets/images/Valorant.jpg" alt="Imagen Valorant">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -341,7 +305,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/COD Black Ops 3.jpg" alt="Imagen COD Black Ops 3">
+                                    <img src="/assets/images/COD Black Ops 3.jpg" alt="Imagen COD Black Ops 3">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -362,9 +326,7 @@
         </section>
 
         <!-- SLIDER ROL -->
-
-        <section id="rol" class="carousel">
-            <h1>Rol</h1>
+        <h2 class="text-center text-white">Rol</h2>
             <div class="carrusel-list" id="carrusel-list">
                 <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                     onclick="app.processingButton(event)">
@@ -381,7 +343,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/AmongUs.jpg" alt="Imagen AmongUs">
+                                    <img src="/assets/images/AmongUs.jpg" alt="Imagen AmongUs">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -391,7 +353,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/LOL.jpg" alt="Imagen LOL">
+                                    <img src="/assets/images/LOL.jpg" alt="Imagen LOL">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -401,7 +363,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Sims4.jpg" alt="Imagen Sims 4">
+                                    <img src="/assets/images/Sims4.jpg" alt="Imagen Sims 4">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -411,7 +373,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Age of Empires.jpg" alt="Imagen Age of Empires">
+                                    <img src="/assets/images/Age of Empires.jpg" alt="Imagen Age of Empires">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -421,7 +383,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Hogwarts.jpg" alt="Imagen Hogwarts">
+                                    <img src="/assets/images/Hogwarts.jpg" alt="Imagen Hogwarts">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -431,7 +393,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Fall Guys.jpg" alt="Imagen Fall Guys">
+                                    <img src="/assets/images/Fall Guys.jpg" alt="Imagen Fall Guys">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -441,7 +403,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/World_of_Warcraft.jpg" alt="Imagen World of Warcraft">
+                                    <img src="/assets/images/World_of_Warcraft.jpg" alt="Imagen World of Warcraft">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -451,7 +413,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Stardew valley.jpg" alt="Imagen Stardew Valley">
+                                    <img src="/assets/images/Stardew valley.jpg" alt="Imagen Stardew Valley">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -461,7 +423,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Elden Ring.jpg" alt="Imagen Elden Ring">
+                                    <img src="/assets/images/Elden Ring.jpg" alt="Imagen Elden Ring">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -471,7 +433,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Diablo 4.jpg" alt="Imagen Diablo 4">
+                                    <img src="/assets/images/Diablo 4.jpg" alt="Imagen Diablo 4">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -492,9 +454,8 @@
         </section>
 
         <!-- SLIDER AVENTURA -->
-
+        <h2 class="text-center text-white">Aventura</h2>
         <section id="aventura" class="carousel">
-            <h1>Aventura</h1>
             <div class="carrusel-list" id="carrusel-list">
                 <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                     onclick="app.processingButton(event)">
@@ -511,7 +472,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Minecraft.jpg" alt="Imagen Minecraft">
+                                    <img src="/assets/images/Minecraft.jpg" alt="Imagen Minecraft">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -521,7 +482,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/ARK.jpg" alt="Imagen ARK">
+                                    <img src="/assets/images/ARK.jpg" alt="Imagen ARK">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -531,7 +492,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/God Of War.jpg" alt="Imagen God OF War">
+                                    <img src="/assets/images/God Of War.jpg" alt="Imagen God OF War">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -541,7 +502,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Lethal Company.jpg" alt="Imagen Lethal Company">
+                                    <img src="/assets/images/Lethal Company.jpg" alt="Imagen Lethal Company">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -551,7 +512,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Spiderman.jpg" alt="Imagen Spiderman">
+                                    <img src="/assets/images/Spiderman.jpg" alt="Imagen Spiderman">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -561,7 +522,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Hello Neighbor.jpg" alt="Imagen Hello Neighbor">
+                                    <img src="/assets/images/Hello Neighbor.jpg" alt="Imagen Hello Neighbor">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -571,7 +532,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Subnautica.jpg" alt="Imagen Subnautica">
+                                    <img src="/assets/images/Subnautica.jpg" alt="Imagen Subnautica">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -581,7 +542,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Uncharted 4.jpg" alt="Imagen Uncharted 4">
+                                    <img src="/assets/images/Uncharted 4.jpg" alt="Imagen Uncharted 4">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -591,7 +552,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/Astroner.jpg" alt="Imagen Astroner">
+                                    <img src="/assets/images/Astroner.jpg" alt="Imagen Astroner">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -601,7 +562,7 @@
                         <div>
                             <a href="#">
                                 <picture>
-                                    <img src="/assets/MGSV.jpg" alt="Imagen Metal Gear Solid V: The Phantom Pain">
+                                    <img src="/assets/images/MGSV.jpg" alt="Imagen Metal Gear Solid V: The Phantom Pain">
                                 </picture>
                                 <button class="verMas btn btn-danger">Ver mas</button>
                             </a>
@@ -630,6 +591,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="/js/administracion.js"></script>
 </body>
 
 </html>
