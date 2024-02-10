@@ -47,6 +47,7 @@ function borrar(borrarId){
 
 
 function agregarJuego(){
+    filas = JSON.parse(localStorage.getItem('filas'));
     //Recupera los datos de los input
     let nuevoCodigo = document.querySelector('#codigo').value;
     let nuevoNombre = document.querySelector('#nombre').value;
@@ -65,6 +66,12 @@ function agregarJuego(){
     else{
         nuevoChecked = '';
     }
+    for(let i=0; i<filas.length; i++){
+        if(filas[i].id === nuevoCodigo){
+            
+        }
+    }
+    
     //Crea un objeto nuevo para agregar al array de objetos Fila
     var nuevoObjeto = {
         id: nuevoId,
@@ -75,7 +82,6 @@ function agregarJuego(){
         descripcion: nuevoDesc,
         checked: nuevoChecked, 
     };
-    filas = JSON.parse(localStorage.getItem('filas'));
     filas.push(nuevoObjeto); 
     localStorage.setItem('filas', JSON.stringify(filas));
     location.reload();
