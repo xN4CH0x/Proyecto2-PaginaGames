@@ -3,11 +3,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 
-h1{
+main h1{
     font-size: 4rem;
 }
 
-h2{
+main h2{
     font-size: 3rem;
     margin-bottom: 0;
 }
