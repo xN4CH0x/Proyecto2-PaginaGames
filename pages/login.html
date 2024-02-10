@@ -51,7 +51,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-center flex-grow-1">
               <li class="nav-item">
-                <a class="nav-link mx-lg-2 active" aria-current="page" href="/index.html">Inicio</a>
+                <a class="nav-link mx-lg-2" aria-current="page" href="/index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -59,18 +59,18 @@
                   Categorías
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Acción</a></li>
-                  <li><a class="dropdown-item" href="#">Aventura</a></li>
-                  <li><a class="dropdown-item" href="#">Rol</a></li>
-                  <li><a class="dropdown-item" href="#">Arcade</a></li>
-                  <li><a class="dropdown-item" href="#">Simulación</a></li>
+                  <li><a class="dropdown-item" href="#accion">Acción</a></li>
+                  <li><a class="dropdown-item" href="#aventura">Aventura</a></li>
+                  <li><a class="dropdown-item" href="#rol">Rol</a></li>
+                  <li><a class="dropdown-item" href="#deportes">Deportes</a></li>
+                  <li><a class="dropdown-item" href="/pages/error404.html">Simulación</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Contacto</a>
+                <a class="nav-link mx-lg-2" href="/pages/contactos.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Acerca De</a>
+                <a class="nav-link mx-lg-2" href="/pages/nosotros.html">Acerca De</a>
               </li>
               <li>
                 <div class="container">
@@ -107,11 +107,11 @@
               <i class="bx bxs-joystick-alt" style="vertical-align: middle; margin-bottom: 5px"></i>Logeate
             </h1>
             <div class="input-box">
-              <input type="text" name="usuario" placeholder="Usuario o Email" required />
+              <input type="text" name="usuario" placeholder="Usuario o Email" required maxlength="20">
               <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-              <input type="password" id="pass" id="password" name="password" placeholder="Contraseña" required />
+              <input type="password" id="pass" id="password" name="password" placeholder="Contraseña" required maxlength="20">
 
               <i class="bx bx-hide" id="hideIcon" onclick="ocultarPassword()"></i>
               <i class="bx bxs-show" id="showIcon" style="display: none" onclick="ocultarPassword()"></i>
@@ -194,11 +194,11 @@
           <form class="form">
             <label for="nome" class="labelfut fs-6 title animate">Usuario:</label>
 
-            <input type="text" name="text" class="input" placeholder="Danni007" required />
+            <input type="text" name="text" class="input" placeholder="Danni007" required maxlength="20">
             <div class="mario"></div>
             <label for="email" class="labelfut title animate fs-6">E-mail:</label>
 
-            <input type="text" name="text" class="input" placeholder="gdann0078@gmail.com" required />
+            <input type="email" name="text" class="input" placeholder="gdann0078@gmail.com" required maxlength="25">
             <button class="btn-class-name" onclick="enviarEmail()">
               <span class="back"></span>
               <span class="front text-bg-danger">Go!</span>
