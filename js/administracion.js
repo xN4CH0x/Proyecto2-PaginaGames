@@ -2,6 +2,7 @@ function destacar(destacarId){
     localStorage.setItem('juegoDestacado', destacarId);
     let destacarJuego = localStorage.getItem('juegoDestacado');
     console.log(destacarJuego);
+    console.log('ese es el juego destacado')
     filas = JSON.parse(localStorage.getItem('filas'));
     let filaDestacar = document.getElementById(destacarId);
     for(let i=0; i<filas.length; i++){
@@ -46,7 +47,8 @@ function borrar(borrarId){
 
 
 
-function agregarJuego(){
+function agregarJuego() {
+    filas = JSON.parse(localStorage.getItem('filas'));
     //Recupera los datos de los input
     let nuevoCodigo = document.querySelector('#codigo').value;
     let nuevoNombre = document.querySelector('#nombre').value;
@@ -54,34 +56,76 @@ function agregarJuego(){
     let nuevoCategoria = document.querySelector('#categoria').value;
     let nuevoDesc = document.querySelector('#descripcion').value;
     let nuevoChecked = document.querySelector('#disponible').value;
+    //Setear el checked
     nuevoChecked = nuevoChecked.toLowerCase();
-    console.log(nuevoChecked);
-    if(nuevoChecked !== 'si' && nuevoChecked !== 'no'){
+    if (nuevoChecked !== 'si' && nuevoChecked !== 'no') {
         nuevoChecked = 'checked';
     }
-    else if(nuevoChecked === 'si'){
+    else if (nuevoChecked === 'si') {
         nuevoChecked = 'checked';
     }
-    else{
+    else {
         nuevoChecked = '';
     }
+    //Para ver que se hayan puesto todos los datos
+    let todos = true;
+    do{
+        if(nuevoCodigo === ''){
+            nuevoCodigo = prompt('Debe ingresar un codigo');
+            todos = false;
+        }
+        else if(nuevoNombre === ''){
+            nuevoNombre = prompt('Debe ingresar un nombre');
+            todos = false;
+        }
+        else if(nuevoCategoria === ''){
+            nuevoCategoria = prompt('Debe ingresar una categoria');
+            todos = false;
+        }
+        else if(nuevoDesc === ''){
+            nuevoDesc = prompt('Debe ingresar una categoria');
+            todos = false;
+        }
+        else if(nuevoChecked === ''){
+            nuevoChecked = prompt('Debe ingresar si esta disponible');
+            todos = false;
+        }
+        else{
+            todos = true;
+        };
+    }while(todos==false);
+    
+    //Para ver que no se repita el codigo
+    for (let i = 0; i < filas.length; i++) {
+        console.log('funciona el for');
+        if (filas[i].codigo === nuevoCodigo) {
+            console.log('entra al if');
+            nuevoCodigo = prompt('Este codigo ya está en uso, ingrese uno nuevo: ');
+            i = 0;
+        }
+    }
+
+
+
+
+
     //Crea un objeto nuevo para agregar al array de objetos Fila
     var nuevoObjeto = {
         id: nuevoId,
-        clase:'',
+        clase: '',
         codigo: nuevoCodigo,
         nombre: nuevoNombre,
         categoria: nuevoCategoria,
         descripcion: nuevoDesc,
-        checked: nuevoChecked, 
+        checked: nuevoChecked,
     };
-    filas = JSON.parse(localStorage.getItem('filas'));
-    filas.push(nuevoObjeto); 
+    filas.push(nuevoObjeto);
     localStorage.setItem('filas', JSON.stringify(filas));
     location.reload();
 }
 
 function editarJuego(){
+    filas = JSON.parse(localStorage.getItem('filas'));
     //Recupera los datos de los input
     let nuevoCodigo = document.querySelector('#codigo-editar').value;
     let nuevoNombre = document.querySelector('#nombre-editar').value;
@@ -90,7 +134,6 @@ function editarJuego(){
     let nuevoDesc = document.querySelector('#descripcion-editar').value;
     let nuevoChecked = document.querySelector('#disponible-editar').value;
     nuevoChecked = nuevoChecked.toLowerCase();
-    console.log(nuevoChecked);
     if(nuevoChecked === '' || (nuevoChecked !== 'si' && nuevoChecked !== 'no')){
         nuevoChecked = 'none';
     }
@@ -100,9 +143,18 @@ function editarJuego(){
     else{
         nuevoChecked = '';
     }
+    //Para ver que el codigo no coincida con otro
+    for (let i = 0; i < filas.length; i++) {
+        console.log('funciona el for');
+        if (filas[i].codigo === nuevoCodigo) {
+            console.log('entra al if');
+            nuevoCodigo = prompt('Este codigo ya está en uso, ingrese uno nuevo: ');
+            i = 0;
+        }
+    }
     //Recupera los datos de la id de la fila a editar y de las filas desde el Local Storage
     let editarId = localStorage.getItem('editarId');
-    filas = JSON.parse(localStorage.getItem('filas'));
+    
     //Recorre el arreglo en busca del objeto que tiene la misma id de la que se busca editar
     for(let i=0; i<filas.length; i++){
         if(filas[i].id === editarId){
@@ -180,7 +232,7 @@ var filas = [
         codigo: '123',
         clase:'',
         nombre: 'Lethal Company',
-        categoria: 'Terror',
+        categoria: 'Aventura',
         descripcion: 'Lootear y conseguir materiales para la compañía.',
         descripcionLarga: 'Eres un trabajador contratado por la Compañía. Tu trabajo consiste en recoger chatarra de lunas abandonadas e industrializadas para cumplir la cuota de beneficios de la Compañía. Puedes usar el dineroque ganes para viajar a nuevas lunas con mayores riesgos y recompensas...',
         checked: 'checked',
