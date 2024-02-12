@@ -125,8 +125,10 @@ body {
 
 .navbar .container {
     position: absolute;
-    left: 187vh;
+    /* left: 102vh; */
     max-width: 60px;
+    display: flex;
+    align-items: end;
 }
 
 .navbar input {
@@ -134,13 +136,15 @@ body {
     box-sizing: border-box;
     height: 45px;
     width: 0px;
-    padding: 0 20px;
+    padding: 0 10px;
     border-radius: 50px;
     font-size: 15px;
     transition: all .7s ease;
     background-color: #525558;
     color: #fff;
     border: none;
+    position: relative;
+    left: 10px;
 }
 
 ::placeholder {
@@ -149,7 +153,7 @@ body {
 
 .btnLupa {
     position: absolute;
-    right: 4px;
+    right: 10px;
     top: 0px;
     width: 45px;
     height: 45px;
@@ -171,7 +175,7 @@ body {
 }
 
 .navbar .container:hover input {
-    transform: translate(-255px);
+    transform: translate(25px);
     width: 300px;
 }
 
@@ -191,10 +195,10 @@ body {
     }
 
     .navbar input {
-        width: 300px;
+        width: 270px;
         height: 40px;
-        position: absolute;
-        left: 50px;
+        position: relative;
+        left: 65px;
         border-radius: 20px;
         border: none;
         outline: none;
@@ -203,21 +207,20 @@ body {
     }
 
     .btnLupa {
-        right: 0px;
-        left: 305px;
-        top: 10px;
-        width: 50px;
-        height: 50px;
+        left: 40px;
+        top: 15px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
     }
 
     .btnLupa i {
-        bottom: 15px;
+        bottom: 18px;
     }
 
     .navbar .container:hover input {
         transform: translate(0px);
-        width: 300px;
+        width: 270px;
     }
 
     .navbar .container:hover i {
@@ -234,9 +237,9 @@ body {
 
     .navbar input {
         width: 260px;
-        height: 40px;
-        position: absolute;
-        left: 65px;
+        height: 45px;
+        position: relative;
+        left: 75px;
         border-radius: 20px;
         border: none;
         outline: none;
@@ -245,11 +248,11 @@ body {
     }
 
     .btnLupa {
-        right: 0px;
-        left: 305px;
-        top: 9px;
-        width: 50px;
-        height: 50px;
+        /* right: 0px; */
+        left: 45px;
+        top: 15px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
     }
 
@@ -259,10 +262,10 @@ body {
 
     .navbar .container:hover input {
         transform: translate(0px);
-        width: 280px;
+        width: 260px;
     }
 
-    .container:hover i {
+    .navbar .container:hover i {
         transform: rotate(0deg);
     }
 }
