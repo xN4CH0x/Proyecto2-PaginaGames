@@ -9,7 +9,6 @@ if (usuarioLogeado === 'admin') {
     boton.style.display = "none";
 }
 
-
 // if(usuarioLogeado === 'admin'){
 //     usuarioActual.style.display =  "block";
 // } else {
