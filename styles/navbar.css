@@ -123,28 +123,24 @@ body {
 /* BUSCADOR */
 
 
-.navbar .container {
+.container {
     position: absolute;
-    /* left: 102vh; */
+    left: 187vh;
     max-width: 60px;
-    display: flex;
-    align-items: end;
 }
 
-.navbar input {
+input {
     outline: none;
     box-sizing: border-box;
     height: 45px;
     width: 0px;
-    padding: 0 10px;
+    padding: 0 20px;
     border-radius: 50px;
     font-size: 15px;
     transition: all .7s ease;
     background-color: #525558;
     color: #fff;
     border: none;
-    position: relative;
-    left: 10px;
 }
 
 ::placeholder {
@@ -153,11 +149,11 @@ body {
 
 .btnLupa {
     position: absolute;
-    right: 10px;
+    right: 4px;
     top: 0px;
     width: 45px;
     height: 45px;
-    background: #8707ff;
+    background: #cc0000;
     line-height: 80px;
     border-radius: 50%;
     text-align: center;
@@ -174,30 +170,72 @@ body {
     bottom: 16px;
 }
 
-.navbar .container:hover input {
-    transform: translate(25px);
+.container:hover input {
+    transform: translate(-255px);
     width: 300px;
 }
 
-.navbar .container:hover i {
+.container:hover i {
     transform: rotate(-360deg);
 }
 
 .btnLupa:hover {
-    background: #ff3cac;
+    background: #cc0000;
 }
 
 @media(max-width:500px) {
-    .navbar .container {
+    .container {
         padding-top: 15px;
         left: 0;
         max-width: 350px;
     }
 
-    .navbar input {
-        width: 270px;
+    input {
+        width: 300px;
         height: 40px;
-        position: relative;
+        position: absolute;
+        left: 50px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .btnLupa {
+        right: 0px;
+        left: 305px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .btnLupa i {
+        bottom: 15px;
+    }
+
+    .container:hover input {
+        transform: translate(0px);
+        width: 300px;
+    }
+
+    .container:hover i {
+        transform: rotate(0deg);
+    }
+}
+
+@media(min-width:501px) and (max-width:1000px) {
+    .container {
+        padding-top: 15px;
+        left: 0;
+        max-width: 300px;
+    }
+
+    input {
+        width: 260px;
+        height: 40px;
+        position: absolute;
         left: 65px;
         border-radius: 20px;
         border: none;
@@ -207,52 +245,11 @@ body {
     }
 
     .btnLupa {
-        left: 40px;
-        top: 15px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-
-    .btnLupa i {
-        bottom: 18px;
-    }
-
-    .navbar .container:hover input {
-        transform: translate(0px);
-        width: 270px;
-    }
-
-    .navbar .container:hover i {
-        transform: rotate(0deg);
-    }
-}
-
-@media(min-width:501px) and (max-width:1000px) {
-    .navbar .container {
-        padding-top: 15px;
-        left: 0;
-        max-width: 300px;
-    }
-
-    .navbar input {
-        width: 260px;
-        height: 45px;
-        position: relative;
-        left: 75px;
-        border-radius: 20px;
-        border: none;
-        outline: none;
-        background-color: #000;
-        color: #fff;
-    }
-
-    .btnLupa {
-        /* right: 0px; */
-        left: 45px;
-        top: 15px;
-        width: 45px;
-        height: 45px;
+        right: 0px;
+        left: 305px;
+        top: 9px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
     }
 
@@ -260,19 +257,19 @@ body {
         bottom: 15px;
     }
 
-    .navbar .container:hover input {
+    .container:hover input {
         transform: translate(0px);
-        width: 260px;
+        width: 280px;
     }
 
-    .navbar .container:hover i {
+    .container:hover i {
         transform: rotate(0deg);
     }
 }
 
 
 .login-button {
-    background-color: #8707ff;
+    background-color: #cc0000;
     color: #fff;
     font-size: 14px;
     padding: 8px 20px;
@@ -283,7 +280,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #ff3cac;
+    background-color: #ff0000;
 }
 
 .navbar-toggler {
@@ -314,7 +311,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color: #ff3cac;
+    background-color: #ff0000;
 }
 
 .nav-link::before {
@@ -325,7 +322,7 @@ body {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #8707ff;
+    background-color: #cc0000;
     visibility: hidden;
     transition: 0.3s ease-in-out;
 }
