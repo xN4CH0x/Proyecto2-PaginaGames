@@ -124,7 +124,6 @@ body {
 
 .navbar .container {
     position: absolute;
-    /* left: 102vh; */
     max-width: 60px;
     display: flex;
     align-items: end;
