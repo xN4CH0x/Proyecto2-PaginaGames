@@ -51,7 +51,7 @@ function validateInputs() {
 
   if (usuario === currentUser.username && password === currentUser.password) {
     if (currentUser.role === "admin") {
-      window.location.href = "http://127.0.0.1:5501/pages/administracion.html"; // Reemplazar  con la  página de administración
+      window.location.href = "http://127.0.0.1:5500/pages/administracion.html"; // Reemplazar  con la  página de administración
     } else {
       document.forms["login"].submit();
     }
