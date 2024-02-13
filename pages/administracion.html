@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============================FONTS=============================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+    <!--===========================BOOTSTRAP=========================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/styles/administracion.css">
+    <title>Administracion</title>
+</head>
+<body>
+    <main>
+        <div class="titulo text-center">
+            <h1>Administrar Productos</h1>
+        </div>
+        <div class="table-wraper">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="table-row">
+                        <th scope="col">Código</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Publicado</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="boton-container d-flex justify-content-end mt-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar Juego +</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade text-black" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Juego</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            
+                            <div class="datos-container mb-3">
+                                <label for="codigo">Código:</label>
+                                <input type="text" id="codigo" minlength="3" maxlength="5" required>
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" maxlength="40" required>
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="categoria">Categoría</label>
+                                <input type="text" id="categoria" maxlength="30" required>
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="descripcion">Descripción</label>
+                                <input type="text" id="descripcion" maxlength="100" required>
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="disponible">Disponible (si/no)</label>
+                                <input type="text" id="disponible" maxlength="3" minlength="3" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="agregarJuego()">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Editar-->
+        <div class="modal fade text-black" id="editarModal" tabindex="-1" aria-labelledby="editarModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Datos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            
+                            <div class="datos-container mb-3">
+                                <label for="codigo-editar">Código:</label>
+                                <input type="text" id="codigo-editar" minlength="3" maxlength="5">
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="nombre-editar">Nombre:</label>
+                                <input type="text" id="nombre-editar" maxlength="40">
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="categoria-editar">Categoría</label>
+                                <input type="text" id="categoria-editar" maxlength="30">
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="descripcion-editar">Descripción</label>
+                                <input type="text" id="descripcion-editar" maxlength="100">
+                            </div>
+
+                            <div class="datos-container mb-3">
+                                <label for="disponible-editar">Disponible (si/no)</label>
+                                <input type="text" id="disponible-editar" maxlength="3" minlength="3">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="editarJuego()">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+
+
+
+    <!--=============================SCRIPTS==========================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/08f90996b2.js" crossorigin="anonymous"></script>
+    <script src="/js/administracion.js"></script>
+</body>
+</html>
