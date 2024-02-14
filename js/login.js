@@ -60,13 +60,7 @@ function validateInputs() {
     role: "admin",
   };
 
-  for(let i=0; i<usuarios.length; i++){
-    if(usuarios[i].username === usuario && usuarios[i].pass === password){
-      alert('Bienvenido ' + usuario);
-      encontrado = true;
-      window.location.href = "/index.html";
-    }
-  }
+  
 
   if (usuario === currentUser.username && password === currentUser.password) {
     if (currentUser.role === "admin") {
@@ -76,6 +70,14 @@ function validateInputs() {
       document.forms["login"].submit();
     }
   } 
+
+  for(let i=0; i<usuarios.length; i++){
+    if(usuarios[i].username === usuario && usuarios[i].pass === password){
+      alert('Bienvenido ' + usuario);
+      encontrado = true;
+      window.location.href = "/index.html";
+    }
+  }
 
   if(encontrado == false){
     alert("Usuario o contraseña incorrectos. Intenta nuevamente.");
