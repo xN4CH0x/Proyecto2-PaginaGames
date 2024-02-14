@@ -1,3 +1,10 @@
+let usuarios = [
+  {
+    username: 'julio',
+    pass: 'julio123',
+  }
+];
+
 /* Mover carrousel  */
 function iniciarCarruselAutomatico() {
   let carrusel = document.querySelector(".carousel");
@@ -14,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /* Validar Formulario */
 
 function validate() {
+  usuarios = JSON.parse(localStorage.getItem('usuarios'));
   let username = document.getElementById("name").value;
   let usuario = document.getElementById("usuario").value;
   let contraseña = document.getElementById("contraseña").value;
@@ -45,7 +53,23 @@ function validate() {
     alert("Por favor, ingresa un Email Valido.");
     return false;
   }
+
   return true;
+}
+
+function guardarUsuario(){
+  usuarios = JSON.parse(localStorage.getItem('usuarios'));
+  let usuario = document.getElementById("usuario").value;
+  let contraseña = document.getElementById("contraseña").value;
+  let nuevoUsuario = {
+    username: usuario,
+    pass: contraseña,
+  }
+
+  usuarios.push(nuevoUsuario);
+  localStorage.setItem('usuarios', JSON.stringify(usuarios));
+  usuarios = JSON.parse(localStorage.getItem('usuarios'));
+  console.log(usuarios);
 }
 
 function enviarEmail() {
@@ -103,4 +127,4 @@ document
     }
   });
 
-aaa;
+

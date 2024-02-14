@@ -1,3 +1,11 @@
+let usuarios = [
+  {
+    username: 'julio',
+    pass: 'julio123',
+  }
+];
+
+
 /* Funcion ocultar contraseña  */
 
 function ocultarPassword() {
@@ -21,9 +29,10 @@ function ocultarPassword() {
 
 /* Validar Login */
 function validateInputs() {
+  usuarios = JSON.parse(localStorage.getItem('usuarios'));
   var usuario = document.forms["login"]["usuario"].value;
   var password = document.forms["login"]["password"].value;
-
+  let encontrado = false;
   if (usuario == "") {
     alert("Por favor, ingresa un usuario o Email.");
     return false;
@@ -35,11 +44,13 @@ function validateInputs() {
   }
   if (usuario == "Julio") {
     alert("Bienvenido Gamer!!");
+    encontrado = true;
     return false;
   }
 
   if (password == "julio123") {
     alert("Bienvenido Gamer!");
+    encontrado = true;
     return false;
   }
 
@@ -49,15 +60,28 @@ function validateInputs() {
     role: "admin",
   };
 
+  for(let i=0; i<usuarios.length; i++){
+    if(usuarios[i].username === usuario && usuarios[i].pass === password){
+      alert('Bienvenido ' + usuario);
+      encontrado = true;
+      window.location.href = "/index.html";
+    }
+  }
+
   if (usuario === currentUser.username && password === currentUser.password) {
     if (currentUser.role === "admin") {
-      window.location.href = "http://127.0.0.1:5500/pages/administracion.html"; // Reemplazar  con la  página de administración
+      encontrado = true;
+      window.location.href = "/pages/administracion.html"; // Reemplazar  con la  página de administración
     } else {
       document.forms["login"].submit();
     }
-  } else {
+  } 
+
+  if(encontrado == false){
     alert("Usuario o contraseña incorrectos. Intenta nuevamente.");
   }
+
+  localStorage.setItem('usuarioActual', usuario);
 }
 
 /* Validar Login */

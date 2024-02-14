@@ -172,14 +172,14 @@
             </div>
             <div class="col-12">
               <label for="Telefono" class="form-label text-light neon-red">Telefono</label>
-              <input type="number" id="number" class="input" required />
+              <input type="number" id="number" class="input" required maxlength="10"/>
             </div>
             <div class="col-md-12">
               <label for="formEmail" class="form-label text-light neon-red">Email</label>
               <input type="email" id="email" class="input" placeholder="PabloJerez@gmail.com" />
             </div>
             <div class="col-md-12">
-              <button type="submit" id="submitButton" class="mt-4 w-100 ui-btn" ;reset()>
+              <button type="submit" id="submitButton" class="mt-4 w-100 ui-btn" ;reset()  onclick="guardarUsuario()">
                 <span> Enviar </span>
               </button>
             </div>
