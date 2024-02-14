@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+main h1 {
+    font-size: 4rem;
+    padding-top: 120px;
+    font-family:  'Teko', sans-serif;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* DESTACADO */
+
+.principalSection {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 1rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.destacadoTitulo {
+    color: #ffffff;
+}
+
+.parrafos {
+    padding: 0.5rem;
+}
+
+.parrafos p {
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+}
+
+.botonDescargar {
+    background-color: #8707ff;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.botonDescargar a {
+    text-decoration: none;
+}
+
+.botonDescargar h3 {
+    margin: 0;
+}
+
+.img-maximizada {
+    display: none;
+}
+
+
+/* CATEGORIAS */
+
+.tituloCategorias {
+    opacity: .9;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: 'Teko', sans-serif;
+    text-align: start;
+    margin-top: rem;
+}
+
+
+/* SLIDER CARDS */
+
+main a {
+    text-decoration: none;
+}
+
+.carrusel-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 20px 0px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    height: 37vh;
+}
+
+.carrusel-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.carrusel {
+    position: relative;
+    width: 210px;
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.carrusel a img {
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.verMas {
+    width: 50%;
+    position: absolute;
+    top: 33vh;
+    left: 8vh;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background: #8707ff;
+    font-weight: 600;
+}
+
+.verMas:hover {
+    background-color: #ff3cac;
+    transition: all 0.5s ease;
+}
+
+.verMas:active {
+    transform: scale(1.5);
+}
+
+.tituloSlider {
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    position: relative;
+    top: 25px;
+}
+
+
+@media(min-width:360px) {
+
+    /* DESTACADO */
+
+    .presentacionDestacado {
+        width: 88vw;
+        height: 35vh;
+        left: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex: wrap;
+    }
+
+    .presentacionDestacado img {
+        width: 41vh;
+        height: 30vh;
+    }
+
+    iframe {
+        width: 41vh;
+    }
+
+    .imagenesDestacado {
+        width: 15vh;
+        height: 5vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .imagenesDestacado img {
+        width: 17vh;
+        height: 9vh;
+        flex-wrap: wrap;
+    }
+
+
+
+    /* SLIDER CARDS */
+
+    .carousel {
+        padding-top: 1rem;
+        padding-bottom: 1vh;
+        margin-top: 0;
+    }
+
+    .carousel h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    main .carrusel {
+        width: 265px;
+    }
+
+    .carrusel-list {
+        max-width: 100vw;
+        height: 41vh;
+    }
+
+    .carrusel-track {
+        padding: 50px;
+    }
+
+    .carrusel a img {
+        height: 300px;
+        width: 250px;
+    }
+
+    .verMas:active {
+        transform: scale(1.1);
+    }
+
+}
+
+
+@media(min-width:768px) {
+
+    .carousel {
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+    }
+
+    .carousel h1 {
+        text-align: start;
+        position: absolute;
+        left: 47.5vh;
+        top: 15px;
+        font-size: 45px;
+    }
+
+    main .carrusel {
+        width: 270px;
+    }
+
+    .carrusel-list {
+        max-width: 81vw;
+        height: 26vh;
+    }
+
+    .carrusel-track {
+        padding: 0vw;
+    }
+
+    .verMas {
+        top: 27vh;
+        left: 8vh;
+    }
+
+    .verMas:active {
+        transform: scale(1.1);
+    }
+}
+
+
+@media(min-width:1025px) {
+
+    .carousel h1 {
+        text-align: start;
+        position: relative;
+        left: 55px;
+    }
+
+    main .carrusel {
+        width: 280px;
+    }
+
+    .carrusel-list {
+        max-width: 74vw;
+        height: 37vh;
+    }
+
+    .carrusel-track {
+        padding: 7px;
+    }
+
+    .verMas {
+        top: 33vh;
+        left: 8vh;
+    }
+
+    .verMas:active {
+        transform: scale(1.1);
+    }
+
+    /* ESTILOS GALERIA */
+
+    .showcase {
+        width: 80vw;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+
+    .games {
+        display: flex;
+        gap: 0.6rem;
+        aspect-ratio: 5 / 2;
+        position: relative;
+    }
+
+    .game{
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        flex: 1 2rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: flex-start;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .game:hover {
+        flex: 20;
+    }
+
+    .game>a {
+        white-space: nowrap;
+        color: white;
+        margin: 1rem 0.8rem;
+        font-size: 1.5rem;
+        opacity: 0.7;
+        font-weight: 600;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    .game:hover>a {
+        opacity: 1;
+    }
+
+    .game>a::before {
+        font-family: "Font Awesome 6 Free";
+        content: "\f11b";
+        display: inline-block;
+        border-radius: 50%;
+        border: 0.2rem solid #ffffffe6;
+        aspect-ratio: 1 / 1;
+        margin-right: 1rem;
+        padding: 0.35em 0.25em 0em 0.25em;
+        font-size: 1.1rem;
+        vertical-align: 0.1rem;
+    }
+
+    .game:nth-child(1) {
+        background-image: url(/assets/images/FC24\ grande.jpg);
+    }
+
+    .game:nth-child(2) {
+        background-image: url(/assets/images/Gta5.jpg);
+    }
+
+    .game:nth-child(3) {
+        background-image: url(/assets/images/LOL\ grande.jfif);
+    }
+
+    .game:nth-child(4) {
+        background-image: url(/assets/images/Forza\ Horizon.jpg);
+    }
+
+    .game:nth-child(5) {
+        background-image: url(/assets/images/Ark\ grande.jpg);
+    }
+}
+
+.carrusel-arrow {
+    border-radius: 50px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrusel-arrow:focus {
+    outline: 0;
+}
+
+.carrusel-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev {
+    left: 5px;
+}
+
+.carrusel-next {
+    right: 5px;
+}
+
+
+@media(min-width:412px) {
+
+    .trailer {
+        width: 100%;
+        height: 20rem;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .logo-descripcion {
+        height: 50%;
+    }
+
+    .botonDescargar {
+        margin-bottom: 1rem;
+    }
+
+    .imagenes-presentacion {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .imagenes-presentacion img {
+        width: 48%;
+        margin-bottom: .8rem;
+    }
+
+    #img4-preview {
+        display: none;
+    }
+}
+
+
+@media(min-width:768px) {
+    .parrafos {
+        text-align: center;
+    }
+
+    .trailer {
+        height: 30rem;
+    }
+
+    .imagenes-presentacion {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .imagenes-presentacion img {
+        height: 10vh;
+        margin-right: 1rem;
+    }
+
+    #img2-preview {
+        margin-right: 0;
+    }
+
+    #img3-preview {
+        display: none;
+    }
+
+    #img4-preview {
+        display: none;
+    }
+}
+
+@media(min-width:1024px) {
+    .principalSection {
+        height: 70vh;
+    }
+
+    .trailer {
+        width: 100%;
+        height: 80%;
+        margin-top: 0;
+        display: block;
+    }
+
+    .logo-descripcion img {
+        width: 100%;
+    }
+
+    .parrafos {
+        text-align: start;
+    }
+
+    .imagenes-presentacion img {
+        display: block;
+        width: 10vw;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .img-maximizada {
+        width: 100%;
+        height: 80%;
+        margin-top: 0;
+    }
+
+    #img2-preview {
+        margin-right: 1rem;
+    }
+
+    #img3-preview {
+        display: block;
+    }
+
+    #img4-preview {
+        display: block;
+    }
+
+    #gtavi-row-header {
+        height: 20rem;
+    }
+
+    .gtavi-desc-image {
+        height: 10rem;
+        width: 50%;
+    }
+}
