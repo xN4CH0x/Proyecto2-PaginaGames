@@ -1,0 +1,335 @@
+body {
+    background-color: #000117;
+}
+
+.navbar {
+    background-color: #000;
+    height: 80px;
+    margin: 10px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    width: 10%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+}
+
+.logoNombre {
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+}
+
+@media(min-width:360px) {
+    .navbar-brand {
+        width: 25%;
+    }
+
+    .offcanvas-title img {
+        width: 90px;
+    }
+
+    .offcanvas-title .logoNombre {
+        position: relative;
+        top: 7px;
+        right: 15px;
+    }
+}
+
+@media(min-width:540px) {
+    .navbar-brand {
+        width: 18%;
+    }
+
+    .offcanvas-title img {
+        width: 100px;
+    }
+
+    .offcanvas-title .logoNombre {
+        position: relative;
+        top: 10px;
+        right: 15px;
+    }
+}
+
+@media(min-width:768px) {
+
+    .navbar {
+        height: 90px;
+    }
+
+    .navbar-brand {
+        width: 14%;
+    }
+
+    .logoNombre {
+        position: relative;
+        top: 10px;
+        right: 15px;
+    }
+
+    .offcanvas-title .logoNombre {
+        position: relative;
+        top: 10px;
+        right: 15px;
+    }
+}
+
+@media(min-width:1000px) {
+
+    .logoNombre {
+        position: relative;
+        top: 23px;
+        right: 25px;
+    }
+}
+
+
+@media(min-width:1025px) {
+
+    .offcanvas-body .container {
+        display: none;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    .navbar-nav {
+        position: relative;
+        right: 65px;
+    }
+
+    .navbar-brand {
+        width: 10%;
+    }
+
+    .logoNombre {
+        position: relative;
+        top: 40px;
+        right: 40px;
+    }
+}
+
+
+/* BUSCADOR */
+
+
+.navbar .container {
+    position: absolute;
+    max-width: 60px;
+    display: flex;
+    align-items: end;
+}
+
+.navbar input {
+    outline: none;
+    box-sizing: border-box;
+    height: 45px;
+    width: 0px;
+    padding: 0 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    transition: all .7s ease;
+    background-color: #525558;
+    color: #fff;
+    border: none;
+    position: relative;
+    left: 10px;
+}
+
+::placeholder {
+    color: grey;
+}
+
+.btnLupa {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    width: 45px;
+    height: 45px;
+    background: #8707ff;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btnLupa i {
+    font-size: 20px;
+    color: #fff;
+    line-height: 80px;
+    transition: all .7s ease;
+    position: relative;
+    bottom: 16px;
+}
+
+.navbar .container:hover input {
+    transform: translate(25px);
+    width: 300px;
+}
+
+.navbar .container:hover i {
+    transform: rotate(-360deg);
+}
+
+.btnLupa:hover {
+    background: #ff3cac;
+}
+
+@media(max-width:500px) {
+    .navbar .container {
+        padding-top: 15px;
+        left: 0;
+        max-width: 350px;
+    }
+
+    .navbar input {
+        width: 270px;
+        height: 40px;
+        position: relative;
+        left: 65px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .btnLupa {
+        left: 40px;
+        top: 15px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .btnLupa i {
+        bottom: 18px;
+    }
+
+    .navbar .container:hover input {
+        transform: translate(0px);
+        width: 270px;
+    }
+
+    .navbar .container:hover i {
+        transform: rotate(0deg);
+    }
+}
+
+@media(min-width:501px) and (max-width:1000px) {
+    .navbar .container {
+        padding-top: 15px;
+        left: 0;
+        max-width: 300px;
+    }
+
+    .navbar input {
+        width: 260px;
+        height: 45px;
+        position: relative;
+        left: 75px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .btnLupa {
+        /* right: 0px; */
+        left: 45px;
+        top: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .btnLupa i {
+        bottom: 15px;
+    }
+
+    .navbar .container:hover input {
+        transform: translate(0px);
+        width: 260px;
+    }
+
+    .navbar .container:hover i {
+        transform: rotate(0deg);
+    }
+}
+
+
+.login-button {
+    background-color: #8707ff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    font-weight: 500;
+}
+
+.login-button:hover {
+    background-color: #ff3cac;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link,
+.dropdown,
+.dropdown-item {
+    color: #A8AEB7;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.dropdown {
+    color: #A8AEB7;
+}
+
+.dropdown-item:hover {
+    background-color: #ff3cac;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #8707ff;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}

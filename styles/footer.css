@@ -1,0 +1,331 @@
+footer p {
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Teko', sans-serif;
+}
+
+footer {
+  background-color: #121313;
+  width: 100%;
+}
+
+#copyRig {
+  color: red;
+  font-size: 20px;
+}
+
+
+footer img {
+  width: 42px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 30px;
+}
+
+/*---------- Efecto Neon----------- */
+@-webkit-keyframes turnonlights {
+  0%, 7%, 12%, 22%, 26%, 34%, 36%, 42%, 60%, 67%, 72%, 78%, 86%, 96% {
+    color: #6d5669;
+    text-shadow: 0 0 1px #635861, 0 0 3px #635861;
+  }
+
+  1%, 4%, 8%, 23%, 28%, 55%, 63%, 76%, 84% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+  }
+
+  73% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+  }
+
+  100% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+  }
+}
+
+@-moz-keyframes turnonlights {
+  0%, 7%, 12%, 22%, 26%, 34%, 36%, 42%, 60%, 67%, 72%, 78%, 86%, 96% {
+    color: #6d5669;
+    text-shadow: 0 0 1px #635861, 0 0 3px #635861;
+  }
+
+  1%, 4%, 8%, 23%, 28%, 55%, 63%, 76%, 84% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+  }
+
+  73% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+  }
+
+  100% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+  }
+}
+
+.title {
+  color: #222;
+  text-align: center;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 3px #555;
+  animation: titleAnimation 2s infinite alternate;
+}
+
+.content #switch {
+  color: #999;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  cursor: pointer;
+}
+
+.content {
+  position: relative;
+  width: 700px;
+  padding: 2em;
+  margin: 1em auto;
+  background-color: #222;
+  border-radius: 12px;
+}
+
+footer h5 {
+  text-align: center;
+  margin: 0.5em auto;
+  letter-spacing: 0.15em;
+  font-family: 'Teko', sans-serif;
+  font-weight: 800;
+  font-size: 6.6em;
+  text-transform: uppercase;
+  color: #6d5669;
+  text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+  animation: titleAnimation 1s infinite alternate;
+}
+
+.animate {
+  animation: neonAnimation 10s infinite;
+}
+
+@keyframes titileAnimation {
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes neonAnimation {
+  0% {
+    /* color: #6d5669; */
+    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+  }
+
+  100% {
+    /* color: #ff55de; */
+    text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de;
+  }
+}
+
+/* -----------Efecto Neon---------- */
+
+/* ------------------Formulario---------- */
+.form {
+
+  border-radius: 10px;
+  padding: -12px;
+  width: 300px;
+  margin: 20px auto;
+
+}
+
+.labelfut {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #de5959;
+}
+
+
+.mario {
+  width: 6px;
+  height: 5px;
+  position: relative;
+  left: 150px;
+  box-shadow: 0px 0px 0px transparent, 130px 5px #ffa500, 135px 5px #ffa500,
+    140px 5px #ffa500, 95px 10px #de4513, 100px 10px #de4513, 105px 10px #de4513,
+    110px 10px #de4513, 115px 10px #de4513, 130px 10px #ffa500,
+    135px 10px #ffa500, 140px 10px #ffa500, 90px 15px #de4513, 95px 15px #de4513,
+    100px 15px #de4513, 105px 15px #de4513, 110px 15px #de4513,
+    115px 15px #de4513, 120px 15px #de4513, 125px 15px #de4513,
+    130px 15px hsl(15, 84%, 47%), 135px 15px #ffa500, 140px 15px #ffa500,
+    90px 20px #a52a2a, 95px 20px #a52a2a, 100px 20px #a52a2a, 105px 20px #ffa500,
+    110px 20px #ffa500, 115px 20px #000, 120px 20px #ffa500, 130px 20px #4545bb,
+    135px 20px #4545bb, 140px 20px #4545bb, 85px 25px #a52a2a, 90px 25px #ffa500,
+    95px 25px #a52a2a, 100px 25px #ffa500, 105px 25px #ffa500,
+    110px 25px #ffa500, 115px 25px #000, 120px 25px #ffa500, 125px 25px #ffa500,
+    130px 25px #4545bb, 135px 25px #4545bb, 140px 25px #4545bb,
+    85px 30px #a52a2a, 90px 30px #ffa500, 95px 30px #a52a2a, 100px 30px #a52a2a,
+    105px 30px #ffa500, 110px 30px #ffa500, 115px 30px #ffa500,
+    120px 30px #a52a2a, 125px 30px #ffa500, 130px 30px #ffa500,
+    135px 30px #ffa500, 140px 30px #4545bb, 85px 35px #a52a2a, 90px 35px #a52a2a,
+    95px 35px #ffa500, 100px 35px #ffa500, 105px 35px #ffa500,
+    110px 35px #ffa500, 115px 35px #a52a2a, 120px 35px #a52a2a,
+    125px 35px #a52a2a, 130px 35px #a52a2a, 135px 35px #a52a2a,
+    95px 40px #ffa500, 100px 40px #ffa500, 105px 40px #ffa500,
+    110px 40px #ffa500, 115px 40px #ffa500, 120px 40px #ffa500,
+    125px 40px #ffa500, 130px 40px #4545bb, 75px 45px #4545bb, 80px 45px #4545bb,
+    85px 45px #4545bb, 90px 45px #4545bb, 95px 45px #4545bb, 100px 45px #de4513,
+    105px 45px #4545bb, 110px 45px #4545bb, 115px 45px #4545bb,
+    120px 45px #de4513, 125px 45px #4545bb, 70px 50px #4545bb, 75px 50px #4545bb,
+    80px 50px #4545bb, 85px 50px #4545bb, 90px 50px #4545bb, 95px 50px #4545bb,
+    100px 50px #4545bb, 105px 50px #de4513, 110px 50px #4545bb,
+    115px 50px #4545bb, 120px 50px #4545bb, 125px 50px #de4513, 140px 50px #000,
+    65px 55px #ffa500, 70px 55px #ffa500, 75px 55px #4545bb, 80px 55px #4545bb,
+    85px 55px #4545bb, 90px 55px #4545bb, 95px 55px #4545bb, 100px 55px #4545bb,
+    105px 55px #de4513, 110px 55px #de4513, 115px 55px #de4513,
+    120px 55px #de4513, 125px 55px #de4513, 140px 55px #000, 65px 60px #ffa500,
+    70px 60px #ffa500, 75px 60px #ffa500, 85px 60px #de4513, 90px 60px #de4513,
+    95px 60px #4545bb, 100px 60px #de4513, 105px 60px #de4513, 110px 60px #ff0,
+    115px 60px #de4513, 120px 60px #de4513, 125px 60px #ff0, 130px 60px #de4513,
+    135px 60px #000, 140px 60px #000, 70px 65px #ffa500, 80px 65px #000,
+    85px 65px #de4513, 90px 65px #de4513, 95px 65px #de4513, 100px 65px #de4513,
+    105px 65px #de4513, 110px 65px #de4513, 115px 65px #de4513,
+    120px 65px #de4513, 125px 65px #de4513, 130px 65px #de4513, 135px 65px #000,
+    140px 65px #000, 75px 70px #000, 80px 70px #000, 85px 70px #000,
+    90px 70px #de4513, 95px 70px #de4513, 100px 70px #de4513, 105px 70px #de4513,
+    110px 70px #de4513, 115px 70px #de4513, 120px 70px #de4513,
+    125px 70px #de4513, 130px 70px #de4513, 135px 70px #000, 140px 70px #000,
+    70px 75px #000, 75px 75px #000, 80px 75px #000, 85px 75px #de4513,
+    90px 75px #de4513, 95px 75px #de4513, 100px 75px #de4513, 105px 75px #de4513,
+    110px 75px #de4513, 115px 75px #de4513, 70px 80px #000, 85px 80px #de4513,
+    90px 80px #de4513, 95px 80px #de4513;
+}
+
+/*-------------Formulario----------------- */
+/*------------ Boton Rojo ------------------*/
+.btn-class-name {
+  --primary: 255, 90, 120;
+  --secondary: 150, 50, 60;
+  width: 60px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  outline: 10px solid rgb(var(--primary), .5);
+  border-radius: 100%;
+  position: relative;
+  transition: .3s;
+  display: inline-block;
+  margin-top: 25px;
+  left: 100px;
+}
+
+.btn-class-name .back {
+  background: rgb(var(--secondary));
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-class-name .front {
+  background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+  box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--secondary));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transform: translateY(-15%);
+  transition: .15s;
+  color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+  transform: translateY(0%);
+  box-shadow: 0 0;
+}
+
+/*------------- Boton Rojo-------- */
+
+/* -----------Input Formulario------- */
+footer .input {
+  color: #8707ff;
+  border: 3px solid #8707ff;
+  border-radius: 15px;
+  padding: 10px 25px;
+  background: transparent;
+  width: 300px;
+}
+
+footer .input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+/*------------------ Input Formulario.-------------- */
+
+/*------------- Iconos Redes Socuales----------------- */
+
+.tooltip-container {
+  position: relative;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg,
+      #ff3cac 0%,
+      #784ba0 50%,
+      #2b86c5 100%);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.tooltip-container .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg,
+      #ff3cac 0%,
+      #784ba0 50%,
+      #2b86c5 100%);
+  cursor: pointer;
+}
+
+
+
+
+/*------------- Iconos Redes Socuales----------------- */
+
+

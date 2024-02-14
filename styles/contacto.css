@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.bodycontacto {
+  background-image: url(/assets/images/back3.contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center;
+}
+
+.container-banner {
+  background: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  max-height: 250px;
+  margin-top: 50px;
+}
+
+.text-banner {
+  position: relative;
+
+}
+
+.text-banner h1 {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  padding: 55px 0px 25px 0px;
+  color: #ffffff;
+}
+
+@media(min-width:360px) {
+  .text-banner h1 {
+    font-size: 18vw;
+  }
+}
+
+@media(min-width:760px) {
+  .text-banner h1 {
+    font-size: 15vw;
+  }
+}
+
+@media(min-width:1025px) {
+  .text-banner h1 {
+    font-size: 10vw;
+  }
+}
+
+.container-contacto {
+  margin-bottom: 40px;
+}
+
+.container-dos {
+  color: #ffffff;
+}
+
+.contact-info li {
+  list-style: none;
+  position: relative;
+}
+
+main h2 {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+}
+
+main .icon {
+  margin: 10px 20px;
+  font-size: 25px;
+  position: relative;
+  display: flex;
+}
+
+main .icon i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg,
+      #ff3cac 0%,
+      #784ba0 50%,
+      #2b86c5 100%);
+  padding: 10px 8px;
+
+}
+
+main .icon h4 {
+  position: relative;
+  left: 25px;
+  font-family: 'Teko', sans-serif;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+main p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 15px 0 30px;
+}
+
+.contact-form {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  padding: 30px 30px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  padding: 2em;
+  border-radius: 4vw;
+  backdrop-filter: blur(10px);
+}
+
+.contact-form input {
+  border: none;
+  font-family: 'Teko', sans-serif;
+  padding: 10px 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #ffff;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 20px;
+}
+
+#email_id::placeholder {
+  color: #ffffffbe;
+  font-weight: 100;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+#from_name::placeholder {
+  color: #ffffffbe;
+  font-weight: 100;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.form-control:focus {
+  background-color: rgb(12, 12, 12);
+  color: #ffffffbe;
+  font-weight: 100;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.contact-form textarea {
+  border: none;
+  font-family: 'Teko', sans-serif;
+  padding: 10px 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #ffff;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 20px;
+}
+
+#message::placeholder {
+  color: #ffffffbe;
+  font-weight: 100;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.form-control:focus {
+  background-color: rgb(12, 12, 12);
+  color: #ffffffbe;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+main .btn {
+  background-color: #ffffff;
+  color: black;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  padding: 15px 35px 9px 35px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+
+main .btn:hover {
+  background-color: #8707ff;
+  color: #ffffff;
+}
+
+/*---------- Efecto Neon----------- */
+@-webkit-keyframes turnonlights {
+
+  0%,
+  7%,
+  12%,
+  22%,
+  26%,
+  34%,
+  36%,
+  42%,
+  60%,
+  67%,
+  72%,
+  78%,
+  86%,
+  96% {
+    color: #6d5669;
+    text-shadow: 0 0 1px #635861, 0 0 3px #635861;
+  }
+
+  1%,
+  4%,
+  8%,
+  23%,
+  28%,
+  55%,
+  63%,
+  76%,
+  84% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+  }
+
+  73% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+  }
+
+  100% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+  }
+}
+
+@-moz-keyframes turnonlights {
+
+  0%,
+  7%,
+  12%,
+  22%,
+  26%,
+  34%,
+  36%,
+  42%,
+  60%,
+  67%,
+  72%,
+  78%,
+  86%,
+  96% {
+    color: #6d5669;
+    text-shadow: 0 0 1px #635861, 0 0 3px #635861;
+  }
+
+  1%,
+  4%,
+  8%,
+  23%,
+  28%,
+  55%,
+  63%,
+  76%,
+  84% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+  }
+
+  73% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+  }
+
+  100% {
+    color: #ff55de;
+    text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+  }
+}
+
+.animate {
+  animation: neonAnimation 6s infinite;
+}
+
+@keyframes titileAnimation {
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes neonAnimation {
+  0% {
+
+    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+  }
+
+  100% {
+
+    text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de;
+  }
+}
+
+/* -----------Efecto Neon---------- */

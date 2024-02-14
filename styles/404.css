@@ -1,0 +1,120 @@
+main{
+    height: 100vh;
+    background-image: url(/assets/images/city_neon3.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+main .container{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.logo-error img{
+    height: 100%;
+    max-height: 90px;
+}
+.error404letra{
+    color: whitesmoke;
+    font-size: 13vw;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*---------- Efecto Neon----------- */
+@-webkit-keyframes turnonlights {
+    0%, 7%, 12%, 22%, 26%, 34%, 36%, 42%, 60%, 67%, 72%, 78%, 86%, 96% {
+      color: #6d5669;
+      text-shadow: 0 0 1px #635861, 0 0 3px #635861;
+    }
+  
+    1%, 4%, 8%, 23%, 28%, 55%, 63%, 76%, 84% {
+      color: #ff55de;
+      text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+    }
+  
+    73% {
+      color: #ff55de;
+      text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+    }
+  
+    100% {
+      color: #ff55de;
+      text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+    }
+  }
+  
+  @-moz-keyframes turnonlights {
+    0%, 7%, 12%, 22%, 26%, 34%, 36%, 42%, 60%, 67%, 72%, 78%, 86%, 96% {
+      color: #6d5669;
+      text-shadow: 0 0 1px #635861, 0 0 3px #635861;
+    }
+  
+    1%, 4%, 8%, 23%, 28%, 55%, 63%, 76%, 84% {
+      color: #ff55de;
+      text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+    }
+  
+    73% {
+      color: #ff55de;
+      text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 20px #ff00de;
+    }
+  
+    100% {
+      color: #ff55de;
+      text-shadow: 0 0 2px #ff99de, 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+    }
+  }
+  .animate {
+    animation: neonAnimation 6s infinite;
+  }
+  
+  @keyframes titileAnimation {
+    to {
+      opacity: 0.8;
+    }
+  }
+  
+  @keyframes neonAnimation {
+    0% {
+      
+      text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+    }
+  
+    100% {
+      
+      text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de;
+    }
+  }
+  
+  /* -----------Efecto Neon---------- */
+
+.text-error{
+    font-size: 4vw;
+    color: whitesmoke;
+    font-family: 'Teko', sans-serif !important;
+    text-transform: uppercase;
+}
+main .btn{
+    font-size: 17px;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    padding: 15px 35px 9px 35px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+
+    border: 3px solid #8707ff;
+    border-radius: 15px;
+}
+.btn:hover{
+    background-color: #8707ff;
+    color: #ffffff;
+}
