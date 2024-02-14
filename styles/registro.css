@@ -22,6 +22,10 @@ main h1 {
   animation: flicker 2s linear infinite;
 }
 
+main a {
+  text-decoration: none;
+}
+
 .animate {
   animation: neonAnimation 10s infinite;
 }
@@ -316,6 +320,7 @@ main h1 {
 
 .goBoton svg {
   height: 24px;
+  width: 80px;
 }
 
 .goBoton:hover {
@@ -345,6 +350,7 @@ main h1 {
 
 .faBoton svg {
   height: 30px;
+  width: 80px;
 }
 
 .faBoton:hover {

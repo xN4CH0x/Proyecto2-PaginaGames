@@ -122,12 +122,12 @@ footer h5 {
 
 @keyframes neonAnimation {
   0% {
-    color: #6d5669;
+    /* color: #6d5669; */
     text-shadow: 0 0 3px #635861, 0 0 5px #635861;
   }
 
   100% {
-    color: #ff55de;
+    /* color: #ff55de; */
     text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de;
   }
 }
